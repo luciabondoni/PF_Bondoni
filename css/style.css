@@ -6,24 +6,38 @@
 
 header{
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  background-color: pink;
+ background-color: pink;
 }
 
 .logo{
-  height: 250px;
-  width: 250px;
-  margin: 3px 3px 3px 3px;
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+height: 200px;
+width: 200px;
+margin: 10px 3px 10px 10px;
+}
+
+.redes1{
+display: flex;
+flex-direction: row; 
+justify-content: flex-end;
+align-items: stretch;
 }
 
 .redes{
   height: 50px;
   width: 50px;
-  margin: 3px 3px 3px 3px;
+  margin: 10px 10px 3px 3px;
 }
 
-.titulo{
-  margin-top: 100px;
+.titulo1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 170px;
 }
 
 nav{
