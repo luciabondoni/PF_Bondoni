@@ -30,7 +30,7 @@ align-items: stretch;
 .redes{
   height: 50px;
   width: 50px;
-  margin: 10px 10px 3px 3px;
+  margin: 20px 20px 3px 3px;
 }
 
 .titulo1{
@@ -60,9 +60,25 @@ nav ul li a{
   width: 100%;
 }
 
+.fundamentos, .pilares, .pilares1{
+  text-align: start;
+  font-family:'Roboto', sans-serif;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
 .desc{
+  text-align:start;
+  margin: 30px 70px 30px 50px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 200%;
+}
+
+.parrafo-mayor{
   text-align: center;
-  margin: 30px 70px 30px 70px;
+  margin: 30px 70px 30px 50px;
+  font-family: 'Roboto', sans-serif;
+  font-size: xx-large;
 }
 
 footer{
