@@ -4,22 +4,24 @@
   box-sizing: border-box;
 }
 
-header{background-color: #CB6CE6;
-  display: flex;
-  flex-direction: row;
-  }
+header{
+  background-color: #CB6CE6;
+  display: grid;
+  grid-template-areas: "logo redes";
+
+}
   
 .contendedor-logo{
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-area: logo;
   justify-content: center;
   align-items: center;
   width: 50%;
-  }
+}
   
 .logo{
   justify-content: center;
-  width: 40%;
+  width: 20%;
   margin-left: 10px;
   margin-bottom: 20px;
   animation-duration: 5s;
@@ -35,20 +37,13 @@ header{background-color: #CB6CE6;
     opacity: 1;
   }
 }
-
-.contenedor-redes{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    width: 50%;
-  }
   
 .redes-sociales{
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    display: grid;
+    grid-area: redes;
+    display: inline-block;
+    justify-self: flex-end;
+    
   }
   
 .redes-sociales li a{
@@ -58,7 +53,7 @@ header{background-color: #CB6CE6;
 .redes{background-color: #CB6CE6; 
   height: 30px;
   width: 30px;
-  margin: 0px 10px 100px 10px;
+  margin: 10px;
 }
 
 .redes:hover{
@@ -66,8 +61,11 @@ header{background-color: #CB6CE6;
   width: 40px;
 }
 
-nav{
-  background-color: rgb(106, 9, 96);
+.navegacion{
+  margin-top: 1rem;
+}
+
+nav{background-color:rgb(169, 168, 168);
   font-family:'Roboto', sans-serif;
   font-size: medium;
   color: black;
@@ -88,17 +86,12 @@ nav ul li a{
 .barraNav:hover{
     color: black;
     transform: scale(1.5);
-    background-color: rgb(106, 9, 96);
   }
-
-.fundamentos{
-  text-align: start;
-  font-family:'Roboto', sans-serif;
-  margin-top: 10px;
-}
 
 .fundamentos{background-color: #CB6CE6;
   text-align: center;
+  font-family:'Roboto', sans-serif;
+  margin-top: 10px;
 }
 
 .pilares{background-color: #CB6CE6;
@@ -174,9 +167,9 @@ nav ul li a{
   font-size: xx-large;
 }
 
-footer{background-color: #CB6CE6;
+footer{background-color:rgb(169, 168, 168);
   width: 100%;
-  height: 170px;
+  height: 200px;
 }
 
 .contenedor-footer{
@@ -190,11 +183,14 @@ footer{background-color: #CB6CE6;
 .info{
   text-align: start;
   justify-items: end;
+  font-family: 'Roboto', sans-serif;
+  line-height: 200%; 
   margin-top: 10px;
   margin-left: 10px;
 }
 
 .derechos{
+  font-family: 'Roboto', sans-serif;
   text-align: center;
   justify-items: end;
   margin-top: 50px;
@@ -220,7 +216,8 @@ footer{background-color: #CB6CE6;
   margin-bottom: 20px;
 }
 
-.btn{background-color: #CB6CE6;
+.btn{
+  background-color: #CB6CE6;
 }
 
 .tarjetas{
@@ -278,52 +275,178 @@ footer{background-color: #CB6CE6;
   margin-bottom: 20px;
 }
 
-.salidas{
+.salidas{background-color: #CB6CE6;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
-  text-align: center;
 }
 
 .parrafo2{
-  margin-top: 20px;
-  margin-bottom: 20px;
+  text-align:start;
+  margin: 30px 70px 30px 50px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 200%;
+}
+
+.contenedor-videos1{
+  display: grid;
+  grid-template-areas:  "subtitulo1 subtitulo2"
+                        "chacra sierras";
+  grid-template-columns: 50% 50%;
+}
+
+.subtitulo1{
+  display: grid;
+  grid-area: subtitulo1;
+  background-color: #CB6CE6;
+  text-align: center;
+  font-family:'Roboto', sans-serif;
+  margin-top: 10px;
+}
+
+.subtitulo2{
+  display: grid;
+  grid-area: subtitulo2;
+  background-color: #CB6CE6;
+  text-align: center;
+  font-family:'Roboto', sans-serif;
+  margin-top: 10px;
 }
 
 .chacra{
-  margin-top: 20px;
-  margin-bottom: 20px;
+  display: grid;
+  grid-area: chacra;
+  justify-self:flex-start;
 }
+
 .video-chacra{
+  justify-self: center;
   height: 350px;
   width: 500px;
-  margin-top: 20px;
-  margin-left: 350px;
-  margin-bottom: 20px;
+}
+
+.parrafo-chacra{
+text-align:center;
+margin: 10px 50px 10px 50px;
+font-family: 'Roboto', sans-serif;
+line-height: 200%;  
+}
+
+.parrafo-chacra2{
+  text-align:center;
+  margin: 10px 50px 10px 50px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 200%;
+}
+
+.lista-chacra{
+  list-style-type: none;
+  text-align:start;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 200%;
 }
 
 .sierras{
-  margin-top: 20px;
-  margin-bottom: 20px;
+  display: grid;
+  grid-area: sierras;
 }
 
 .video-sierras{
+  justify-self: center;
   height: 350px;
   width: 500px;
-  margin-top: 20px;
-  margin-left: 350px;
-  margin-bottom: 20px;
-}
-.escuelarural{
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
-.video-chacra{
+.parrafo-sierras{
+text-align:center;
+margin: 10px 50px 10px 50px;
+font-family: 'Roboto', sans-serif;
+line-height: 200%;  
+}
+
+.parrafo-sierras2{
+text-align:center;
+margin: 10px 50px 10px 30px;
+font-family: 'Roboto', sans-serif;
+line-height: 200%;
+}
+
+.contenedor-videos2{
+  display: grid;
+  grid-template-areas:  "subtitulo3 subtitulo4"
+                        "campo puerto";
+  grid-template-columns: 50% 50%;
+}
+
+.campo{
+  display: grid;
+  grid-area: campo;
+}
+
+.puerto{
+  display: grid;
+  grid-area: puerto;
+}
+
+.subtitulo3{
+  display: grid;
+  grid-area: subtitulo3;
+  background-color: #CB6CE6;
+  text-align: center;
+  font-family:'Roboto', sans-serif;
+  margin-top: 10px;
+}
+
+.subtitulo4{
+  display: grid;
+  grid-area: subtitulo4;
+  background-color: #CB6CE6;
+  text-align: center;
+  font-family:'Roboto', sans-serif;
+  margin-top: 10px;
+}
+
+.video-er{
+  justify-self: center;
   height: 350px;
   width: 500px;
-  margin-top: 20px;
-  margin-left: 350px;
-  margin-bottom: 20px;
+}
+
+.video-puerto{
+  justify-self: center;
+  height: 350px;
+  width: 500px;
+}
+
+.parrafo-escuela-rural{
+  text-align:center;
+  margin: 10px 50px 10px 50px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 200%; 
+}
+
+.parrafo-escuela-rural2{
+text-align:center;
+margin: 10px 50px 10px 50px;
+font-family: 'Roboto', sans-serif;
+line-height: 200%; 
+}
+
+.parrafo-puerto{
+  text-align:center;
+  margin: 10px 50px 10px 50px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 200%; 
+}
+
+.parrafo-puerto2{
+  text-align:center;
+  margin: 10px 50px 10px 50px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 200%; 
 }
 
 .maspreg{
@@ -415,15 +538,85 @@ footer{background-color: #CB6CE6;
   margin-bottom: 15px;
 }
 
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  nav{
+    background-color: rgb(106, 9, 96);
+    font-family:'Roboto', sans-serif;
+    font-size: small;
+    color: black;
+  }
+  
+  nav ul li a{
+    text-decoration: none;
+    list-style-type: none;
+    font-size: small;
+    color: black;
+  }
+  
+  .barraNav{
+    display: inline-block;
+    margin: 10px 20px 10px 20px;
+  }
+
+  .contenedor-img-parrafo{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 300px 400px;
+  }
+
+  .ronda{
+    width: 250px;
+    height: 250px;
+    margin-top: 50px;
+    margin-left: 250px;
+    margin-bottom: 100px;
+    position: center;
+  }
+
+  .amigos{
+    width: 250px;
+    height: 250px;
+    margin-top: 50px;
+    margin-left: 40px;
+    margin-bottom: 100px;
+  }
+
+.contenedor-cards{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 400px;
+  column-gap: 10px;
+  row-gap: 10px;
+  justify-items: center;
+}
+
+.card{
+  align-self: center;
+  justify-items: center;
+}
+
+  .map{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+  .contenedor-footer{background-color: #CB6CE6;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50%;
+    row-gap: 50px;
+    width: 100%;
+    height: 300px;
+  }
+}
 
 @media screen and (min-width: 0px) and (max-width: 480px) {
 
   header{
     width: 100%;
     display: grid;
-    grid-template-areas:  "logo redes"
-                          "logo vacio";  
-    grid-template-columns: 80% 20%;                   
+    grid-template-areas:  "logo redes"                  
   }
 
   .contendedor-logo{
@@ -432,20 +625,17 @@ footer{background-color: #CB6CE6;
     }
     
   .logo{
+    width: 50%;
     animation-duration: 5s;
     animation-name: aparecer-desaparecer;
     animation-iteration-count: infinite;
     }
 
-    .contenedor-redes{
+    .redes-sociales{
       display: grid;
       grid-area: redes;
-    }
+      display: inline-block;
 
-    .redes-sociales{
-      list-style-type: none;
-      justify-content: space-evenly;
-      align-items: center;
     }
     
     @keyframes aparecer-desaparecer{
@@ -469,15 +659,17 @@ footer{background-color: #CB6CE6;
     font-size: medium;
     color: black;
   }
-
-  ul{
-    margin-top: 1rem;
-  }
   
   .barraNav{
     display: block;
     margin: 0px;
     padding: 5px;
+  }
+
+  .barraNav:hover{
+    color: black;
+    transform:none;
+    background-color: rgb(106, 9, 96);
   }
 
   .fundamentos{
@@ -591,91 +783,18 @@ footer{background-color: #CB6CE6;
   height: 300px;
 }
 
-.info{
-  text-align: start;
-}
-
 .consultas-admin{
+  font-family: 'Roboto', sans-serif;
+  line-height: 200%; 
   text-decoration: none;
   list-style-type: none;
   margin-left: 0px;
 }
 
 .derechos{
+  font-family: 'Roboto', sans-serif;
   text-align: center;
   justify-items: end;
 }
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  nav{
-    background-color: rgb(106, 9, 96);
-    font-family:'Roboto', sans-serif;
-    font-size: small;
-    color: black;
-  }
-  
-  nav ul li a{
-    text-decoration: none;
-    list-style-type: none;
-    font-size: small;
-    color: black;
-  }
-  
-  .barraNav{
-    display: inline-block;
-    margin: 10px 20px 10px 20px;
-  }
-
-  .contenedor-img-parrafo{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 300px 400px;
-  }
-
-  .ronda{
-    width: 250px;
-    height: 250px;
-    margin-top: 50px;
-    margin-left: 250px;
-    margin-bottom: 100px;
-    position: center;
-  }
-
-  .amigos{
-    width: 250px;
-    height: 250px;
-    margin-top: 50px;
-    margin-left: 40px;
-    margin-bottom: 100px;
-  }
-
-.contenedor-cards{
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 400px;
-  column-gap: 10px;
-  row-gap: 10px;
-  justify-items: center;
-}
-
-.card{
-  align-self: center;
-  justify-items: center;
-}
-
-  .map{
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-  .contenedor-footer{background-color: #CB6CE6;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 50%;
-    row-gap: 50px;
-    width: 100%;
-    height: 300px;
-  }
-}
