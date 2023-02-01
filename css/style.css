@@ -245,11 +245,16 @@ footer{background-color:rgb(169, 168, 168);
   margin-bottom: 40px;
 }
 
-.preguntas{
-  margin-top: 20px;
-  margin-bottom: 20px;
+.preguntas{background-color: #CB6CE6;
   text-align: center;
+  font-family:'Roboto', sans-serif;
+  margin-top: 10px;
 }
+
+.preg{
+  font-family: 'Roboto', sans-serif; 
+}
+
 .p1{
   margin-top: 20px;
   margin-bottom: 20px;
@@ -449,17 +454,40 @@ line-height: 200%;
   line-height: 200%; 
 }
 
-.maspreg{
+.mas-preg{
+  font-family: 'Roboto', sans-serif;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-.formularioconsulta{
+.accordion{
+  font-family: 'Roboto', sans-serif;
+}
+
+.accordion-button{        
+  background-color: white;
+  height: 30px;
+  color:#CB6CE6  
+}
+
+.accordion-button:not(.collapsed){
+  background-color: white;
+  border-color: white;
+  box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+
+.accordion-body{
+  padding: 8px 12px;
+  background-color: white;
+}
+
+.formularioconsulta{background-color: #CB6CE6;
+    font-family: 'Roboto', sans-serif;
     width:300px;
     padding:16px;
     border-radius:50px;
     margin:auto;
-    background-color:rgb(193, 77, 77);
+    margin-bottom: 20px;
 }
 
 .lab{
