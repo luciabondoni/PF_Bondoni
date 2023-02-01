@@ -61,6 +61,23 @@ header{
   width: 40px;
 }
 
+.titulo-principal{
+    padding: auto;
+    margin-top: 15px;
+    text-align: center;
+    background-color: #CB6CE6;
+    font-family:'Roboto', sans-serif;
+    font-size:xx-large;
+}
+
+.parrafo-principal{
+  padding: auto;
+  text-align: center;
+  font-family:'Roboto', sans-serif;
+  font-size:x-large;
+  font-style: italic;
+}
+
 .navegacion{
   margin-top: 1rem;
 }
@@ -794,6 +811,111 @@ line-height: 200%;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 400px 450px 400px;
+  }
+
+  .salidas{background-color: #CB6CE6;
+    width: 100%;
+    margin: 20px 50px 20px 5px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+  }
+  
+  .parrafo2{
+    width: 100%;
+    text-align:center;
+    margin: 20px 50px 20px 5px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 200%;
+  }
+  
+
+  .contenedor-videos1{
+    display: grid;
+    grid-template-areas:  "subtitulo1"
+                          "chacra"
+                          "subtitulo2"
+                          "sierras";
+    grid-template-columns: 100%;
+    grid-template-rows: 3% 47% 3% 47%;
+  }  
+
+  .subtitulo1{
+    display: grid;
+    grid-area: subtitulo1;
+    background-color: #CB6CE6;
+    text-align: center;
+    font-family:'Roboto', sans-serif;
+    margin-bottom: 5px;
+  }
+  
+  .subtitulo2{
+    display: grid;
+    grid-area: subtitulo2;
+    background-color: #CB6CE6;
+    text-align: center;
+    font-family:'Roboto', sans-serif;
+    margin-bottom: 5px;
+  }
+  
+  .chacra{
+    display: grid;
+    grid-area: chacra;
+    justify-self:flex-start;
+  }
+  
+  .video-chacra{
+    justify-self: center;
+    height: 350px;
+    width: 100%;
+    margin-top: 5px;
+  }
+  
+  .parrafo-chacra{
+  text-align:center;
+  margin: 20px 50px 5px 50px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 200%;  
+  }
+  
+  .parrafo-chacra2{
+    text-align:center;
+    margin: 20px 50px 5px 50px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 200%;
+  }
+  
+  .lista-chacra{
+    list-style-type: none;
+    text-align:start;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 200%;
+  }
+  
+  .sierras{
+    display: grid;
+    grid-area: sierras;
+  }
+  
+  .video-sierras{
+    justify-self: center;
+    height: 350px;
+    width: 100%;
+  }
+  
+  .parrafo-sierras{
+  text-align:center;
+  margin: 10px 50px 10px 50px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 200%;  
+  }
+  
+  .parrafo-sierras2{
+  text-align:center;
+  margin: 10px 50px 10px 30px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 200%;
   }
 
   .map{
