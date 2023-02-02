@@ -341,6 +341,13 @@ footer {
   line-height: 200%;
 }
 
+.parrafo-proyecto{
+  text-align: start;
+  margin: 30px 70px 30px 50px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 200%;
+}
+
 .contenedor-videos1 {
   display: grid;
   grid-template-areas: "subtitulo1 subtitulo2"
@@ -917,6 +924,13 @@ footer {
     line-height: 200%;
   }
 
+  .parrafo-proyecto{
+    width: 100%;
+    text-align: center;
+    margin: 20px 50px 20px 5px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 200%;
+  }
 
   .contenedor-videos1 {
     display: grid;
