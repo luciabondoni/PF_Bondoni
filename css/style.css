@@ -79,10 +79,6 @@ header {
   font-style: italic;
 }
 
-.navegacion {
-  margin-top: 1rem;
-}
-
 nav {
   background-color: rgb(169, 168, 168);
   font-family: 'Roboto', sans-serif;
@@ -341,7 +337,7 @@ footer {
   line-height: 200%;
 }
 
-.parrafo-proyecto{
+.parrafo-proyecto {
   text-align: start;
   margin: 30px 70px 30px 50px;
   font-family: 'Roboto', sans-serif;
@@ -585,7 +581,7 @@ footer {
   font-weight: bold;
 }
 
-.col {
+.tarjeta {
   justify-self: center;
 }
 
@@ -675,24 +671,24 @@ footer {
   margin-top: 50px;
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   nav {
-    background-color: rgb(106, 9, 96);
+    background-color: rgb(169, 168, 168);
     font-family: 'Roboto', sans-serif;
-    font-size: small;
+    font-size: medium;
     color: black;
   }
-
+  
   nav ul li a {
     text-decoration: none;
     list-style-type: none;
-    font-size: small;
+    font-size: medium;
     color: black;
   }
-
+  
   .barraNav {
-    display: inline-block;
-    margin: 10px 20px 10px 20px;
+    display: block;
+    margin: 30px 30px 30px 80px;
   }
 
   .contenedor-img-parrafo {
@@ -732,29 +728,69 @@ footer {
     justify-items: center;
   }
 
-  .map {
+  .mapa {
     width: 100%;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 50px;
   }
 
-  .contenedor-footer {
-    background-color: #CB6CE6;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 50%;
-    row-gap: 50px;
+  footer {
+    background-color: rgb(169, 168, 168);
     width: 100%;
     height: 300px;
   }
+
+  .contenedor-footer {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 70%;
+    column-gap: 20px;
+    row-gap: 5px;
+  }
+
+  .accordion {
+    font-family: 'Roboto', sans-serif;
+    font-size: x-large;
+  }
+
+  .accordion-button {
+    font-family: 'Roboto', sans-serif;
+    font-size: x-large;
+    background-color: white;
+    height: 30px;
+    color: #CB6CE6
+  }
+
+  .accordion-button:not(.collapsed) {
+    font-family: 'Roboto', sans-serif;
+    color: #CB6CE6;
+    background-color: white;
+    border-color: white;
+  }
+
+  .accordion-body {
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    padding: 8px 12px;
+    background-color: white;
+  }
+
+  .tarjeta{
+    justify-content: center;
+  }
 }
 
-@media screen and (min-width: 0px) and (max-width: 480px) {
+  
+
+@media screen and (max-width: 480px) {
 
   header {
     width: 100%;
     display: grid;
     grid-template-areas: "logo redes"
+  }
+
+  .body {
+    width: 100%;
   }
 
   .contendedor-logo {
@@ -773,42 +809,30 @@ footer {
     display: grid;
     grid-area: redes;
     display: inline-block;
-
-  }
-
-  @keyframes aparecer-desaparecer {
-    0% {
-      opacity: 0;
-    }
-
-    100% {
-      opacity: 1;
-    }
   }
 
   nav {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 100%;
+    background-color: rgb(169, 168, 168);
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+    color: black;
   }
-
+  
   nav ul li a {
     text-decoration: none;
     list-style-type: none;
     font-size: medium;
     color: black;
   }
-
+  
   .barraNav {
     display: block;
-    margin: 0px;
-    padding: 5px;
+    margin: 30px 50px 30px 80px;
   }
 
-  .barraNav:hover {
-    color: black;
-    transform: none;
-    background-color: rgb(106, 9, 96);
+  .mapa {
+    width: 100%;
+    margin-top: 50px;
   }
 
   .fundamentos {
@@ -924,7 +948,7 @@ footer {
     line-height: 200%;
   }
 
-  .parrafo-proyecto{
+  .parrafo-proyecto {
     width: 100%;
     text-align: center;
     margin: 20px 50px 20px 5px;
@@ -1021,18 +1045,127 @@ footer {
     line-height: 200%;
   }
 
-  .map {
+  .contenedor-videos2 {
+    display: grid;
+    grid-template-areas: "subtitulo3"
+      "campo"
+      "subtitulo4"
+      "puerto";
+    grid-template-columns: 100%;
+    grid-template-rows: 3% 47% 3% 47%;
+  }
+
+  .subtitulo3 {
+    display: grid;
+    grid-area: subtitulo3;
+    background-color: #CB6CE6;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .subtitulo4 {
+    display: grid;
+    grid-area: subtitulo4;
+    background-color: #CB6CE6;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .campo {
+    display: grid;
+    grid-area: campo;
+    justify-self: flex-start;
+  }
+
+  .video-campo {
+    justify-self: center;
+    height: 350px;
     width: 100%;
-    margin-top: 10px;
-    margin-bottom: 10px;
+  }
+
+  .parrafo-escuela-rural {
+    text-align: center;
+    margin: 20px 50px 5px 50px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 200%;
+  }
+
+  .parrafo-escuela-rural2 {
+    text-align: center;
+    margin: 20px 50px 20px 50px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 200%;
+  }
+
+  .puerto {
+    display: grid;
+    grid-area: puerto;
+  }
+
+  .video-puerto {
+    justify-self: center;
+    height: 350px;
+    width: 100%;
+  }
+
+  .parrafo-puerto {
+    text-align: center;
+    margin: 10px 50px 10px 50px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 200%;
+  }
+
+  .parrafo-puerto2 {
+    text-align: center;
+    margin: 10px 50px 10px 30px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 200%;
+  }
+
+  .accordion {
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+  }
+
+  .accordion-button {
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+    background-color: white;
+    height: 30px;
+    color: #CB6CE6
+  }
+
+  .accordion-button:not(.collapsed) {
+    font-family: 'Roboto', sans-serif;
+    color: #CB6CE6;
+    background-color: white;
+    border-color: white;
+  }
+
+  .accordion-body {
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    padding: 8px 12px;
+    background-color: white;
+  }
+
+  .tarjeta{
+    justify-content: center;
+  }
+
+  .mapa {
+    width: 100%;
+    margin-top: 50px;
   }
 
   .contenedor-footer {
-    background-color: #CB6CE6;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 50%;
-    row-gap: 50px;
+    grid-template-rows: 70% 30%;
+  }
+
+  footer {
+    background-color: rgb(169, 168, 168);
     width: 100%;
     height: 300px;
   }
