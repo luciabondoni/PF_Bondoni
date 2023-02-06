@@ -698,8 +698,8 @@ footer {
   }
 
   .logo {
-    width: 50%;
-    height: 20%;
+    width: 80%;
+    height: 200px;
     animation-duration: 5s;
     animation-name: aparecer-desaparecer;
     animation-iteration-count: infinite;
@@ -711,9 +711,6 @@ footer {
     display: inline-block;
   }
 
-  nav {
-
-  }
 
   .mapa {
     width: 100%;
@@ -1036,6 +1033,7 @@ footer {
 
   .tarjeta{
     justify-content: center;
+    margin-left: 70px;
   }
 
   .mapa {
