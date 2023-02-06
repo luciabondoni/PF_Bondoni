@@ -464,7 +464,7 @@ footer {
   margin-top: 10px;
 }
 
-.video-er {
+.video-campo {
   justify-self: center;
   height: 350px;
   width: 500px;
@@ -670,115 +670,6 @@ footer {
   width: 100%;
   margin-top: 50px;
 }
-
-@media screen and (max-width: 768px) {
-  nav {
-    background-color: rgb(169, 168, 168);
-    font-family: 'Roboto', sans-serif;
-    font-size: medium;
-    color: black;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    list-style-type: none;
-    font-size: medium;
-    color: black;
-  }
-  
-  .barraNav {
-    display: block;
-    margin: 30px 30px 30px 80px;
-  }
-
-  .contenedor-img-parrafo {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 300px 400px;
-  }
-
-  .ronda {
-    width: 250px;
-    height: 250px;
-    margin-top: 50px;
-    margin-left: 250px;
-    margin-bottom: 100px;
-    position: center;
-  }
-
-  .amigos {
-    width: 250px;
-    height: 250px;
-    margin-top: 50px;
-    margin-left: 40px;
-    margin-bottom: 100px;
-  }
-
-  .contenedor-cards {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 400px;
-    column-gap: 10px;
-    row-gap: 10px;
-    justify-items: center;
-  }
-
-  .card {
-    align-self: center;
-    justify-items: center;
-  }
-
-  .mapa {
-    width: 100%;
-    margin-top: 50px;
-  }
-
-  footer {
-    background-color: rgb(169, 168, 168);
-    width: 100%;
-    height: 300px;
-  }
-
-  .contenedor-footer {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 30% 70%;
-    column-gap: 20px;
-    row-gap: 5px;
-  }
-
-  .accordion {
-    font-family: 'Roboto', sans-serif;
-    font-size: x-large;
-  }
-
-  .accordion-button {
-    font-family: 'Roboto', sans-serif;
-    font-size: x-large;
-    background-color: white;
-    height: 30px;
-    color: #CB6CE6
-  }
-
-  .accordion-button:not(.collapsed) {
-    font-family: 'Roboto', sans-serif;
-    color: #CB6CE6;
-    background-color: white;
-    border-color: white;
-  }
-
-  .accordion-body {
-    font-family: 'Roboto', sans-serif;
-    font-size: large;
-    padding: 8px 12px;
-    background-color: white;
-  }
-
-  .tarjeta{
-    justify-content: center;
-  }
-}
-
   
 
 @media screen and (max-width: 480px) {
@@ -789,8 +680,16 @@ footer {
     grid-template-areas: "logo redes"
   }
 
-  .body {
-    width: 100%;
+  nav {
+    background-color: rgb(169, 168, 168);
+    font-size: medium;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .barraNav {
+    display: inline-block;
+    margin: 30px 50px 30px 80px;
   }
 
   .contendedor-logo {
@@ -800,6 +699,7 @@ footer {
 
   .logo {
     width: 50%;
+    height: 20%;
     animation-duration: 5s;
     animation-name: aparecer-desaparecer;
     animation-iteration-count: infinite;
@@ -812,22 +712,7 @@ footer {
   }
 
   nav {
-    background-color: rgb(169, 168, 168);
-    font-family: 'Roboto', sans-serif;
-    font-size: medium;
-    color: black;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    list-style-type: none;
-    font-size: medium;
-    color: black;
-  }
-  
-  .barraNav {
-    display: block;
-    margin: 30px 50px 30px 80px;
+
   }
 
   .mapa {
