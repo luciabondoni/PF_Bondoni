@@ -1,0 +1,111 @@
+.contendedor-logo {
+    display: grid;
+    grid-area: logo;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+
+  .redes-sociales {
+    display: grid;
+    grid-area: redes;
+    display: inline-block;
+    justify-self: flex-end;
+  
+        li a {
+            text-decoration: none;
+  }
+}
+
+.contenedor-parrafo-img {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .contenedor-img-parrafo {
+    @extend .contenedor-parrafo-img;
+  }
+
+  .contenedor-footer {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 70%;
+    column-gap: 20px;
+    row-gap: 5px;
+  }
+
+  .contenedor-cards {
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 400px;
+    column-gap: 5px;
+    row-gap: 5px;
+  }
+
+  .contenedor-videos1 {
+    display: grid;
+    grid-template-areas: "subtitulo1 subtitulo2"
+      "chacra sierras";
+    grid-template-columns: 50% 50%;
+  }
+
+  @mixin grid-center-top{
+	display:grid;
+	text-align: center;
+	margin-top: 10px;
+}
+
+  .subtitulo1 {background-color: map-get($map: $paleta_de_colores, $key: $primary);
+    @include grid-center-top;
+    grid-area: subtitulo1;
+    font-family: map-get($map: $paleta_de_fuentes , $key: $normal);
+  }
+  
+  .subtitulo2 {background-color: map-get($map: $paleta_de_colores, $key: $primary);
+    @include grid-center-top;
+    grid-area: subtitulo2;
+    font-family: map-get($map: $paleta_de_fuentes , $key: $normal);
+  }
+  
+  .chacra {
+    display: grid;
+    grid-area: chacra;
+    justify-self: flex-start;
+  }
+
+  .sierras {
+    display: grid;
+    grid-area: sierras;
+  }
+  
+  .contenedor-videos2 {
+    display: grid;
+    grid-template-areas: "subtitulo3 subtitulo4"
+      "campo puerto";
+    grid-template-columns: 50% 50%;
+  }
+  
+  .campo {
+    display: grid;
+    grid-area: campo;
+  }
+  
+  .puerto {
+    display: grid;
+    grid-area: puerto;
+  }
+  
+  .subtitulo3 {background-color: map-get($map: $paleta_de_colores, $key: $primary);
+    @include grid-center-top;
+    grid-area: subtitulo3;
+    font-family: map-get($map: $paleta_de_fuentes , $key: $normal);
+  }
+  
+  .subtitulo4 {background-color: map-get($map: $paleta_de_colores, $key: $primary);
+    @include grid-center-top;
+    grid-area: subtitulo4;
+    font-family: map-get($map: $paleta_de_fuentes , $key: $normal);
+  }
+  
+  

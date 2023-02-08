@@ -1,0 +1,364 @@
+@media screen and (max-width: 480px) {
+
+    header {
+        width: 100%;
+        display: grid;
+        grid-template-areas: "logo redes"
+    }
+
+    nav {
+        background-color: map-get($map: $paleta_de_colores, $key: $secundary);
+        font-size: map-get($map: $paleta_de_tama, $key: $mediano);
+        color: map-get($map: $paleta_de_colores, $key: $tertiary);
+        font-family: map-get($map: $paleta_de_fuentes , $key: $normal);
+    }
+
+    .barraNav {
+        display: inline-block;
+        margin: 30px 50px 30px 80px;
+    }
+
+    .contendedor-logo {
+        display: grid;
+        grid-area: logo;
+    }
+
+    .logo {
+        width: 50%;
+        height: 20%;
+        animation-duration: 5s;
+        animation-name: aparecer-desaparecer;
+        animation-iteration-count: infinite;
+    }
+
+    .redes-sociales {
+        display: grid;
+        grid-area: redes;
+        display: inline-block;
+    }
+
+    .mapa {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .fundamentos {
+        width: 100%;
+    }
+
+    @mixin ancho-grid-columns-padd {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        padding: 5px;
+    }
+
+    .contenedor-img-parrafo {
+        @include ancho-grid-columns-padd;
+        grid-template-areas: "imagen"
+            "parrafo";
+    }
+
+    .ronda {
+        width: 90%;
+        display: grid;
+        grid-area: imagen;
+        margin: 0px;
+        align-items: center;
+        justify-self: center;
+    }
+
+    .descrip {
+        width: 100%;
+        display: grid;
+        grid-area: parrafo;
+        font-family: map-get($map: $paleta_de_fuentes , $key: $normal);
+        justify-self: center;
+        margin: 5px 0px 5px 0px;
+    }
+
+    .parrafo-mayor {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .contenedor-parrafo-img {
+        @include ancho-grid-columns-padd;
+        grid-template-areas: "parr1"
+            "parr2"
+            "parr3"
+            "imag";
+    }
+
+    @mixin grid-margin-heigth-width-self{
+        display:grid;
+        margin: 5px 0px 5px 0px;
+        height: 100%;
+        width: 100%;
+        justify-self: center;
+    }
+
+    .desc {
+        @include grid-margin-heigth-width-self;
+        grid-area: parr1;
+        font-family: map-get($map: $paleta_de_fuentes , $key: $normal);
+    }
+
+    .desc2 {
+        @include grid-margin-heigth-width-self;
+        grid-area: parr2;
+        font-family: map-get($map: $paleta_de_fuentes , $key: $normal);
+    }
+
+    .desc3 {
+        @include grid-margin-heigth-width-self;
+        grid-area: parr3;
+        font-family: map-get($map: $paleta_de_fuentes , $key: $normal);
+    }
+
+    .amigos {
+        display: grid;
+        grid-area: imag;
+        width: 90%;
+        margin: 0;
+        padding: 0;
+        font-family: map-get($map: $paleta_de_fuentes , $key: $normal);
+        justify-self: center;
+    }
+
+    .pilares {
+        width: 100%;
+    }
+
+    .contenedor-cards {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 400px 450px 400px;
+    }
+
+    .salidas {background-color: map-get($map: $paleta_de_colores, $key: $primary);
+        width: 100%;
+        margin: 20px 50px 20px 5px;
+        font-family: map-get($map: $paleta_de_fuentes , $key: $normal);
+        text-align: center;
+    }
+
+    @mixin width-margin-text-line{
+        width: 100%;
+        margin: 20px 50px 20px 5px;
+        text-align: center;
+        flex-direction:row;
+        justify-content:center;
+    }
+    .box {
+       @include flex-rox-center;
+    }
+    
+
+    .parrafo2, .parrafo-proyecto {
+        width: 100%;
+        margin: 20px 50px 20px 5px;
+        font-family: map-get($map: $paleta_de_fuentes , $key: $normal);
+        text-align: center;
+        line-height: 200%;
+    }
+
+    .contenedor-videos1 {
+        display: grid;
+        grid-template-areas: "subtitulo1"
+            "chacra"
+            "subtitulo2"
+            "sierras";
+        grid-template-columns: 100%;
+        grid-template-rows: 3% 47% 3% 47%;
+    }
+
+    @mixin grid-color-center-fuente-bottom{
+        display:grid;
+        background-color: map-get($map: $paleta_de_colores, $key: $primary);
+        text-align: center;
+        font-family: map-get($map: $paleta_de_fuentes , $key: $normal);
+        margin-bottom: 5px;
+    }
+
+    .subtitulo1 {
+         @include grid-color-center-fuente-bottom;
+        grid-area: subtitulo1;
+    }
+
+    .subtitulo2 {
+        @include grid-color-center-fuente-bottom;
+        grid-area: subtitulo2;
+    }
+
+    .chacra {
+        display: grid;
+        grid-area: chacra;
+        justify-self: flex-start;
+    }
+
+    .video-sierras,  .video-campo, .video-puerto {
+        justify-self: center;
+        height: 350px;
+        width: 100%;
+    }
+
+    .video-chacra {
+        @extend .video-sierras;
+        margin-top: 5px;
+    }
+
+    .parrafo-chacra, .parrafo-chacra2 {
+        text-align: center;
+        margin: 20px 50px 5px 50px;
+        font-family: map-get($map: $paleta_de_fuentes , $key: $normal);
+        line-height: 200%;
+    }
+
+    .lista-chacra {
+        list-style-type: none;
+        text-align: start;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-family: map-get($map: $paleta_de_fuentes , $key: $normal);
+        line-height: 200%;
+    }
+
+    .sierras {
+        display: grid;
+        grid-area: sierras;
+    }
+
+    .parrafo-sierras {
+        text-align: center;
+        margin: 10px 50px 10px 50px;
+        font-family: map-get($map: $paleta_de_fuentes , $key: $normal);
+        line-height: 200%;
+    }
+
+    .parrafo-sierras2 {
+        text-align: center;
+        margin: 10px 50px 10px 30px;
+        font-family: map-get($map: $paleta_de_fuentes , $key: $normal);
+        line-height: 200%;
+    }
+
+    .contenedor-videos2 {
+        display: grid;
+        grid-template-areas: "subtitulo3"
+            "campo"
+            "subtitulo4"
+            "puerto";
+        grid-template-columns: 100%;
+        grid-template-rows: 3% 47% 3% 47%;
+    }
+
+    .subtitulo3 {
+        display: grid;
+        grid-area: subtitulo3;
+        background-color: map-get($map: $paleta_de_colores, $key: $primary);
+        text-align: center;
+        font-family: map-get($map: $paleta_de_fuentes , $key: $normal);
+    }
+
+    .subtitulo4 {
+        display: grid;
+        grid-area: subtitulo4;
+        background-color: map-get($map: $paleta_de_colores, $key: $primary);
+        text-align: center;
+        font-family: map-get($map: $paleta_de_fuentes , $key: $normal);
+    }
+
+    .campo {
+        display: grid;
+        grid-area: campo;
+        justify-self: flex-start;
+    }
+
+    .parrafo-escuela-rural, .parrafo-escuela-rural2 {
+        text-align: center;
+        margin: 20px 50px 5px 50px;
+        font-family: map-get($map: $paleta_de_fuentes , $key: $normal);
+        line-height: 200%;
+    }
+
+    .puerto {
+        display: grid;
+        grid-area: puerto;
+    }
+
+    @mixin align-font-line{
+        text-align: center;
+        font-family: map-get($map: $paleta_de_fuentes , $key: $normal);
+        line-height: 200%;
+    }
+
+    .parrafo-puerto {
+        @include align-font-line;
+        margin: 10px 50px 10px 50px;
+    }
+
+    .parrafo-puerto2 {
+        @include align-font-line;
+        margin: 10px 50px 10px 30px;
+    }
+
+    .accordion {
+        font-family: map-get($map: $paleta_de_fuentes , $key: $normal);
+        font-size: map-get($map: $paleta_de_tama, $key: $mediano);
+    }
+
+    .accordion-button {background-color: map-get($map: $paleta_de_colores, $key: $fourth);
+        font-family: map-get($map: $paleta_de_fuentes , $key: $normal);
+        font-size: map-get($map: $paleta_de_tama, $key: $mediano);
+        height: 30px;
+        color: map-get($map: $paleta_de_colores, $key: $primary);
+    }
+
+    .accordion-button:not(.collapsed) { background-color: map-get($map: $paleta_de_colores, $key: $fourth);
+        font-family: map-get($map: $paleta_de_fuentes , $key: $normal);
+        color: map-get($map: $paleta_de_colores, $key: $primary);
+        border-color: map-get($map: $paleta_de_colores, $key: $fourth);
+    }
+
+    .accordion-body {background-color: map-get($map: $paleta_de_colores, $key: $fourth);
+        font-family: map-get($map: $paleta_de_fuentes , $key: $normal);
+        font-size: map-get($map: $paleta_de_tama, $key: $grande);
+        padding: 8px 12px;
+    }
+
+    .tarjeta {
+        justify-content: center;
+    }
+
+    .mapa {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .contenedor-footer {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 70% 30%;
+    }
+
+    footer {
+        background-color: map-get($map: $paleta_de_colores, $key: $secundary);
+        width: 100%;
+        height: 300px;
+    }
+
+    .consultas-admin {
+        font-family: map-get($map: $paleta_de_fuentes , $key: $normal);
+        line-height: 200%;
+        text-decoration: none;
+        list-style-type: none;
+        margin-left: 0px;
+    }
+
+    .derechos {
+        font-family: map-get($map: $paleta_de_fuentes , $key: $normal);
+        text-align: center;
+        justify-items: end;
+    }
+}

@@ -1,0 +1,167 @@
+.titulo-principal {
+    padding: auto;
+    margin-top: 15px;
+    text-align: center;
+    background-color: map-get($map: $paleta_de_colores, $key: $primary);
+    font-family: map-get($map: $paleta_de_fuentes , $key: $normal);
+    font-size: map-get($map: $paleta_de_fuentes, $key: $mas-grande);
+    font-weight: 600;
+  }
+  
+  .parrafo-principal {
+    padding: auto;
+    text-align: center;
+    font-family: map-get($map: $paleta_de_fuentes , $key: $normal);
+    font-size: map-get($map: $paleta_de_fuentes, $key: $muy-grande);
+    font-style: map-get($map: $paleta_de_fuentes, $key: $cursiva);
+  }
+  
+  .fundamentos {
+    background-color: map-get($map: $paleta_de_colores, $key: $primary);
+    text-align: center;
+    font-family: map-get($map: $paleta_de_fuentes , $key: $normal);
+    margin-top: 10px;
+  }
+  
+  .pilares {
+    background-color: $primary;
+    font-family: map-get($map: $paleta_de_fuentes , $key: $normal);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+
+  .desc, .desc2, .desc3, .descrip {
+    text-align: start;
+    margin: 30px 70px 30px 50px;
+    font-family: map-get($map: $paleta_de_fuentes , $key: $normal);
+    line-height: 200%;
+  }
+  
+  .parrafo-mayor {
+    background-color: map-get($map: $paleta_de_colores, $key: $primary);
+    text-align: center;
+    margin: 40px 70px 40px 50px;
+    font-family: map-get($map: $paleta_de_fuentes , $key: $normal);
+    font-size: map-get($map: $paleta_de_fuentes, $key: $mas-grande);
+  }
+   
+  .proyecto-general {
+    background-color: map-get($map: $paleta_de_colores, $key: $primary);
+    font-family: map-get($map: $paleta_de_fuentes , $key: $normal);
+    text-align: center;
+  }
+
+  .acceso-campus {
+    background-color: map-get($map: $paleta_de_colores, $key: $primary);
+    font-family: map-get($map: $paleta_de_fuentes , $key: $normal);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+
+  .parrafo1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .preguntas {
+    background-color: map-get($map: $paleta_de_colores, $key: $primary);
+    text-align: center;
+    font-family: map-get($map: $paleta_de_fuentes , $key: $normal);
+    margin-top: 10px;
+  }
+  
+  .preg {
+    font-family: map-get($map: $paleta_de_fuentes , $key: $normal);
+  }
+  
+  .p1, .p2, .p3, .p4, .p5 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .salidas {
+    background-color: map-get($map: $paleta_de_colores, $key: $primary);
+    font-family: map-get($map: $paleta_de_fuentes , $key: $normal);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .parrafo2, .parrafo-proyecto {
+    text-align: start;
+    margin: 30px 70px 30px 50px;
+    font-family: map-get($map: $paleta_de_fuentes , $key: $normal);
+    line-height: 200%;
+  }
+
+  .parrafo-chacra, .parrafo-chacra2 {
+    text-align: center;
+    margin: 10px 50px 10px 50px;
+    font-family: map-get($map: $paleta_de_fuentes , $key: $normal);
+    line-height: 200%;
+  }
+
+  .lista-chacra {
+    list-style-type: none;
+    text-align: start;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: map-get($map: $paleta_de_fuentes , $key: $normal);
+    line-height: 200%;
+  }
+
+  .parrafo-sierras {
+    text-align: center;
+    margin: 10px 50px 10px 50px;
+    font-family: map-get($map: $paleta_de_fuentes , $key: $normal);
+    line-height: 200%;
+  }
+  
+  .parrafo-sierras2 {
+    text-align: center;
+    margin: 10px 50px 10px 30px;
+    font-family: map-get($map: $paleta_de_fuentes , $key: $normal);
+    line-height: 200%;
+  }
+  
+  .parrafo-escuela-rural, .parrafo-escuela-rural2 {
+    text-align: center;
+    margin: 10px 50px 10px 50px;
+    font-family: map-get($map: $paleta_de_fuentes , $key: $normal);
+    line-height: 200%;
+  }
+  
+  .parrafo-puerto, .parrafo-puerto2{
+    text-align: center;
+    margin: 10px 50px 10px 50px;
+    font-family: map-get($map: $paleta_de_fuentes , $key: $normal);
+    line-height: 200%;
+  }
+  
+  .mas-preg {
+    font-family: map-get($map: $paleta_de_fuentes , $key: $normal);
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .card-title {
+    text-align: center;
+    font-weight: map-get($map: $paleta_de_fuentes, $key: $negrita);
+  }
+
+  .card-texto {
+    font-family: map-get($map: $paleta_de_fuentes , $key: $normal);
+    text-align: center;
+  }
+
+  .elegirnos {
+    background-color: map-get($map: $paleta_de_colores, $key: $primary);
+    font-family: map-get($map: $paleta_de_fuentes , $key: $normal);
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  
+  

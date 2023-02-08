@@ -1,0 +1,26 @@
+.accordion {
+    font-family: map-get($map: $paleta_de_fuentes , $key: $normal);
+    font-size: map-get($map: $paleta_de_tamaño, $key: $grande);
+  }
+  
+  .accordion-button {
+    height: 30px;
+    font-family: map-get($map: $paleta_de_fuentes , $key: $normal);
+    font-size: map-get($map: $paleta_de_tamaño, $key: $muy-grande);
+    background-color: map-get($map: $paleta_de_colores, $key: $fourth);
+    color: map-get($map: $paleta_de_colores, $key: $primary);
+  }
+  
+  .accordion-button:not(.collapsed) {
+    font-family: map-get($map: $paleta_de_fuentes , $key: $normal);
+    color: map-get($map: $paleta_de_colores, $key: $primary);
+    background-color: map-get($map: $paleta_de_colores, $key: $fourth);
+    border-color: map-get($map: $paleta_de_colores, $key: $fourth);
+  }
+  
+  .accordion-body {
+    padding: 8px 12px;
+    font-family: map-get($map: $paleta_de_fuentes , $key: $normal);
+    font-size: map-get($map: $paleta_de_tama, $key: $grande);
+    background-color: map-get($map: $paleta_de_colores, $key: $fourth);
+  }

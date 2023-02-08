@@ -1,0 +1,905 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.btn {
+  background-color: #CB6CE6;
+}
+
+.btn-ingreso {
+  background-color: #CB6CE6;
+}
+
+.boton-acceso {
+  margin-top: 15px;
+  margin-left: 100px;
+  margin-bottom: 15px;
+}
+
+.boton-tilde {
+  margin-left: 5px;
+}
+
+.card-grupo,
+.card-finalidad,
+.card-docentes {
+  width: 100%;
+  height: 200px;
+}
+
+.card {
+  align-self: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.card-integral,
+.card-academica,
+.card-personalizada,
+.card-interdisciplina {
+  width: 100%;
+  height: 300px;
+}
+
+.tarjeta {
+  width: 70%;
+  margin-top: 10px;
+  margin-left: 100px;
+  justify-self: center;
+  border: solid #CB6CE6;
+}
+
+.accordion {
+  font-family: "Roboto", sans-serif;
+  font-size: x-large;
+}
+
+.accordion-button {
+  font-family: "Roboto", sans-serif;
+  font-size: x-large;
+  background-color: white;
+  height: 30px;
+  color: #CB6CE6;
+}
+
+.accordion-button:not(.collapsed) {
+  font-family: "Roboto", sans-serif;
+  color: #CB6CE6;
+  background-color: white;
+  border-color: white;
+}
+
+.accordion-body {
+  font-family: "Roboto", sans-serif;
+  font-size: large;
+  padding: 8px 12px;
+  background-color: white;
+}
+
+footer {
+  background-color: rgb(169, 168, 168);
+  width: 100%;
+  height: 200px;
+}
+
+.info {
+  text-align: start;
+  justify-items: end;
+  font-family: "Roboto", sans-serif;
+  line-height: 200%;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.derechos {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  justify-items: end;
+  margin-top: 50px;
+}
+
+.formulario-consulta {
+  background-color: #CB6CE6;
+  font-family: "Roboto", sans-serif;
+  font-size: medium;
+  width: 300px;
+  padding: 16px;
+  border-radius: 50px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.lab {
+  width: 72px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.imp {
+  width: 180px;
+  padding: 3px 10px;
+  border: 1px solid white;
+  border-radius: 3px;
+  background-color: white;
+  margin: 8px 0;
+  display: inline-block;
+}
+
+.formulario-acceso {
+  font-family: "Roboto", sans-serif;
+  font-size: medium;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 30%;
+}
+
+.formularioaulav {
+  width: 300px;
+  padding: 16px;
+  border-radius: 50px;
+  margin: auto;
+  background-color: rgb(193, 77, 77);
+}
+
+.lab1 {
+  width: 72px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.save {
+  width: 100px;
+  font-weight: 100px;
+}
+
+.inp1 {
+  width: 180px;
+  padding: 3px 10px;
+  border: 1px solid white;
+  border-radius: 3px;
+  background-color: white;
+  margin: 8px 0;
+  display: inline-block;
+}
+
+.consulta {
+  width: 100%;
+  height: 100px;
+  border: 1px solid white;
+  border-radius: 3px;
+  background-color: white;
+  margin: 8px 0;
+  resize: none;
+  display: block;
+}
+
+header {
+  background-color: #CB6CE6;
+  display: grid;
+  grid-template-areas: "logo redes";
+}
+
+.logo {
+  justify-content: center;
+  width: 20%;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  animation-duration: 5s;
+  animation-name: aparecer-desaparecer;
+  animation-iteration-count: infinite;
+}
+
+@keyframes aparecer-desaparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.redes {
+  background-color: #CB6CE6;
+  height: 30px;
+  width: 30px;
+  margin: 10px;
+}
+
+.redes:hover {
+  height: 40px;
+  width: 40px;
+}
+
+.img-tam {
+  width: 100%;
+  height: 600px;
+}
+
+.amigos {
+  width: 80%;
+  height: 80%;
+  margin-left: 50px;
+  margin-right: 30px;
+  margin-bottom: 50px;
+}
+
+.ronda {
+  width: 90%;
+  height: 90%;
+  margin-top: 30px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
+
+.imagen-ingles,
+.imagen-soc,
+.imagen-nat,
+.imagen-teatro,
+.imagen-deporte,
+.imagen-mat {
+  width: 100%;
+  height: 250px;
+}
+
+.mapa {
+  width: 100%;
+  margin-top: 50px;
+}
+
+nav {
+  background-color: rgb(169, 168, 168);
+  font-family: "Roboto", sans-serif;
+  font-size: medium;
+  color: black;
+}
+nav ul li a {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.barraNav {
+  display: inline-block;
+  margin: 30px 50px 30px 80px;
+}
+
+.barraNav:hover {
+  color: black;
+  transform: scale(1.5);
+}
+
+.video-chacra, .video-sierras, .video-campo, .video-puerto {
+  justify-self: center;
+  height: 350px;
+  width: 500px;
+}
+
+.titulo-principal {
+  padding: auto;
+  margin-top: 15px;
+  text-align: center;
+  background-color: #CB6CE6;
+  font-family: "Roboto", sans-serif;
+  font-size: xx-large;
+  font-weight: 600;
+}
+
+.parrafo-principal {
+  padding: auto;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: x-large;
+  font-style: italic;
+}
+
+.fundamentos {
+  background-color: #CB6CE6;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  margin-top: 10px;
+}
+
+.pilares {
+  background-color: #CB6CE6;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.desc, .desc2, .desc3, .descrip {
+  text-align: start;
+  margin: 30px 70px 30px 50px;
+  font-family: "Roboto", sans-serif;
+  line-height: 200%;
+}
+
+.parrafo-mayor {
+  background-color: #CB6CE6;
+  text-align: center;
+  margin: 40px 70px 40px 50px;
+  font-family: "Roboto", sans-serif;
+  font-size: xx-large;
+}
+
+.proyecto-general {
+  background-color: #CB6CE6;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.acceso-campus {
+  background-color: #CB6CE6;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.parrafo1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.card-text,
+.card-title {
+  font-family: "Roboto", sans-serif;
+}
+
+.preguntas {
+  background-color: #CB6CE6;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  margin-top: 10px;
+}
+
+.preg {
+  font-family: "Roboto", sans-serif;
+}
+
+.p1, .p2, .p3, .p4, .p5 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.salidas {
+  background-color: #CB6CE6;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.parrafo2, .parrafo-proyecto {
+  text-align: start;
+  margin: 30px 70px 30px 50px;
+  font-family: "Roboto", sans-serif;
+  line-height: 200%;
+}
+
+.parrafo-chacra, .parrafo-chacra2 {
+  text-align: center;
+  margin: 10px 50px 10px 50px;
+  font-family: "Roboto", sans-serif;
+  line-height: 200%;
+}
+
+.lista-chacra {
+  list-style-type: none;
+  text-align: start;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: "Roboto", sans-serif;
+  line-height: 200%;
+}
+
+.parrafo-sierras {
+  text-align: center;
+  margin: 10px 50px 10px 50px;
+  font-family: "Roboto", sans-serif;
+  line-height: 200%;
+}
+
+.parrafo-sierras2 {
+  text-align: center;
+  margin: 10px 50px 10px 30px;
+  font-family: "Roboto", sans-serif;
+  line-height: 200%;
+}
+
+.parrafo-escuela-rural, .parrafo-escuela-rural2 {
+  text-align: center;
+  margin: 10px 50px 10px 50px;
+  font-family: "Roboto", sans-serif;
+  line-height: 200%;
+}
+
+.parrafo-puerto, .parrafo-puerto2 {
+  text-align: center;
+  margin: 10px 50px 10px 50px;
+  font-family: "Roboto", sans-serif;
+  line-height: 200%;
+}
+
+.mas-preg {
+  font-family: "Roboto", sans-serif;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  text-align: center;
+  font-weight: bold;
+}
+
+.card-texto {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.elegirnos {
+  background-color: #CB6CE6;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.contendedor-logo {
+  display: grid;
+  grid-area: logo;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.redes-sociales {
+  display: grid;
+  grid-area: redes;
+  display: inline-block;
+  justify-self: flex-end;
+}
+.redes-sociales li a {
+  text-decoration: none;
+}
+
+.contenedor-parrafo-img {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.contenedor-img-parrafo {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.contenedor-footer {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 30% 70%;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 5px;
+}
+
+.contenedor-cards {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 400px;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  row-gap: 5px;
+  justify-items: center;
+}
+
+.contenedor-videos1 {
+  display: grid;
+  grid-template-areas: "subtitulo1 subtitulo2" "chacra sierras";
+  grid-template-columns: 50% 50%;
+}
+
+.subtitulo1 {
+  display: grid;
+  grid-area: subtitulo1;
+  background-color: #CB6CE6;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  margin-top: 10px;
+}
+
+.subtitulo2 {
+  display: grid;
+  grid-area: subtitulo2;
+  background-color: #CB6CE6;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  margin-top: 10px;
+}
+
+.chacra {
+  display: grid;
+  grid-area: chacra;
+  justify-self: flex-start;
+}
+
+.sierras {
+  display: grid;
+  grid-area: sierras;
+}
+
+.contenedor-videos2 {
+  display: grid;
+  grid-template-areas: "subtitulo3 subtitulo4" "campo puerto";
+  grid-template-columns: 50% 50%;
+}
+
+.campo {
+  display: grid;
+  grid-area: campo;
+}
+
+.puerto {
+  display: grid;
+  grid-area: puerto;
+}
+
+.subtitulo3 {
+  display: grid;
+  grid-area: subtitulo3;
+  background-color: #CB6CE6;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  margin-top: 10px;
+}
+
+.subtitulo4 {
+  display: grid;
+  grid-area: subtitulo4;
+  background-color: #CB6CE6;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  margin-top: 10px;
+}
+
+.tarjetas {
+  display: flex;
+}
+
+.cards-fila2 {
+  display: flex;
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "logo redes";
+  }
+  nav {
+    background-color: rgb(169, 168, 168);
+    font-size: medium;
+    color: black;
+    font-family: "Roboto", sans-serif;
+  }
+  .barraNav {
+    display: inline-block;
+    margin: 30px 50px 30px 80px;
+  }
+  .contendedor-logo {
+    display: grid;
+    grid-area: logo;
+  }
+  .logo {
+    width: 50%;
+    height: 20%;
+    animation-duration: 5s;
+    animation-name: aparecer-desaparecer;
+    animation-iteration-count: infinite;
+  }
+  .redes-sociales {
+    display: grid;
+    grid-area: redes;
+    display: inline-block;
+  }
+  .mapa {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .fundamentos {
+    width: 100%;
+  }
+  .contenedor-img-parrafo {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "imagen" "parrafo";
+    grid-template-columns: 100%;
+    padding: 5px;
+  }
+  .ronda {
+    width: 90%;
+    display: grid;
+    grid-area: imagen;
+    margin: 0px;
+    align-items: center;
+    justify-self: center;
+  }
+  .descrip {
+    display: grid;
+    grid-area: parrafo;
+    font-family: "Roboto", sans-serif;
+    justify-self: center;
+    width: 100%;
+    margin: 5px 0px 5px 0px;
+  }
+  .parrafo-mayor {
+    width: 100%;
+    margin: 0px;
+  }
+  .contenedor-parrafo-img {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "parr1" "parr2" "parr3" "imag";
+    grid-template-columns: 100%;
+    padding: 5px;
+  }
+  .desc {
+    display: grid;
+    grid-area: parr1;
+    margin: 5px 0px 5px 0px;
+    height: 100%;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    justify-self: center;
+  }
+  .desc2 {
+    display: grid;
+    grid-area: parr2;
+    margin: 5px 0px 5px 0px;
+    height: 100%;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    justify-self: center;
+  }
+  .desc3 {
+    display: grid;
+    grid-area: parr3;
+    margin: 5px 0px 5px 0px;
+    height: 100%;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    justify-self: center;
+  }
+  .amigos {
+    display: grid;
+    grid-area: imag;
+    width: 90%;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    justify-self: center;
+  }
+  .pilares {
+    width: 100%;
+  }
+  .contenedor-cards {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 400px 450px 400px;
+  }
+  .salidas {
+    background-color: #CB6CE6;
+    width: 100%;
+    margin: 20px 50px 20px 5px;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+  }
+  .parrafo2 {
+    width: 100%;
+    text-align: center;
+    margin: 20px 50px 20px 5px;
+    font-family: "Roboto", sans-serif;
+    line-height: 200%;
+  }
+  .parrafo-proyecto {
+    width: 100%;
+    text-align: center;
+    margin: 20px 50px 20px 5px;
+    font-family: "Roboto", sans-serif;
+    line-height: 200%;
+  }
+  .contenedor-videos1 {
+    display: grid;
+    grid-template-areas: "subtitulo1" "chacra" "subtitulo2" "sierras";
+    grid-template-columns: 100%;
+    grid-template-rows: 3% 47% 3% 47%;
+  }
+  .subtitulo1 {
+    display: grid;
+    grid-area: subtitulo1;
+    background-color: #CB6CE6;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 5px;
+  }
+  .subtitulo2 {
+    display: grid;
+    grid-area: subtitulo2;
+    background-color: #CB6CE6;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 5px;
+  }
+  .chacra {
+    display: grid;
+    grid-area: chacra;
+    justify-self: flex-start;
+  }
+  .video-chacra {
+    justify-self: center;
+    height: 350px;
+    width: 100%;
+    margin-top: 5px;
+  }
+  .parrafo-chacra {
+    text-align: center;
+    margin: 20px 50px 5px 50px;
+    font-family: "Roboto", sans-serif;
+    line-height: 200%;
+  }
+  .parrafo-chacra2 {
+    text-align: center;
+    margin: 20px 50px 5px 50px;
+    font-family: "Roboto", sans-serif;
+    line-height: 200%;
+  }
+  .lista-chacra {
+    list-style-type: none;
+    text-align: start;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: "Roboto", sans-serif;
+    line-height: 200%;
+  }
+  .sierras {
+    display: grid;
+    grid-area: sierras;
+  }
+  .video-sierras {
+    justify-self: center;
+    height: 350px;
+    width: 100%;
+  }
+  .parrafo-sierras {
+    text-align: center;
+    margin: 10px 50px 10px 50px;
+    font-family: "Roboto", sans-serif;
+    line-height: 200%;
+  }
+  .parrafo-sierras2 {
+    text-align: center;
+    margin: 10px 50px 10px 30px;
+    font-family: "Roboto", sans-serif;
+    line-height: 200%;
+  }
+  .contenedor-videos2 {
+    display: grid;
+    grid-template-areas: "subtitulo3" "campo" "subtitulo4" "puerto";
+    grid-template-columns: 100%;
+    grid-template-rows: 3% 47% 3% 47%;
+  }
+  .subtitulo3 {
+    display: grid;
+    grid-area: subtitulo3;
+    background-color: #CB6CE6;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+  }
+  .subtitulo4 {
+    display: grid;
+    grid-area: subtitulo4;
+    background-color: #CB6CE6;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+  }
+  .campo {
+    display: grid;
+    grid-area: campo;
+    justify-self: flex-start;
+  }
+  .video-campo {
+    justify-self: center;
+    height: 350px;
+    width: 100%;
+  }
+  .parrafo-escuela-rural {
+    text-align: center;
+    margin: 20px 50px 5px 50px;
+    font-family: "Roboto", sans-serif;
+    line-height: 200%;
+  }
+  .parrafo-escuela-rural2 {
+    text-align: center;
+    margin: 20px 50px 20px 50px;
+    font-family: "Roboto", sans-serif;
+    line-height: 200%;
+  }
+  .puerto {
+    display: grid;
+    grid-area: puerto;
+  }
+  .video-puerto {
+    justify-self: center;
+    height: 350px;
+    width: 100%;
+  }
+  .parrafo-puerto {
+    text-align: center;
+    margin: 10px 50px 10px 50px;
+    font-family: "Roboto", sans-serif;
+    line-height: 200%;
+  }
+  .parrafo-puerto2 {
+    text-align: center;
+    margin: 10px 50px 10px 30px;
+    font-family: "Roboto", sans-serif;
+    line-height: 200%;
+  }
+  .accordion {
+    font-family: "Roboto", sans-serif;
+    font-size: medium;
+  }
+  .accordion-button {
+    font-family: "Roboto", sans-serif;
+    font-size: medium;
+    background-color: white;
+    height: 30px;
+    color: #CB6CE6;
+  }
+  .accordion-button:not(.collapsed) {
+    font-family: "Roboto", sans-serif;
+    color: #CB6CE6;
+    background-color: white;
+    border-color: white;
+  }
+  .accordion-body {
+    font-family: "Roboto", sans-serif;
+    font-size: large;
+    padding: 8px 12px;
+    background-color: white;
+  }
+  .tarjeta {
+    justify-content: center;
+  }
+  .mapa {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .contenedor-footer {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 70% 30%;
+  }
+  footer {
+    background-color: rgb(169, 168, 168);
+    width: 100%;
+    height: 300px;
+  }
+  .consultas-admin {
+    font-family: "Roboto", sans-serif;
+    line-height: 200%;
+    text-decoration: none;
+    list-style-type: none;
+    margin-left: 0px;
+  }
+  .derechos {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    justify-items: end;
+  }
+}/*# sourceMappingURL=main.css.map */
