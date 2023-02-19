@@ -8,7 +8,7 @@ nav {
     list-style-type: none;
 
     a {
-      background-color: black;
+      background-color: map-get($map: $paleta_de_colores, $key: $tertiary);
       text-decoration: none;
     }
   }

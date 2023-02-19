@@ -25,7 +25,7 @@
 
     .logo {
         width: 50%;
-        height: 20%;
+        height: 50%;
         animation-duration: 5s;
         animation-name: aparecer-desaparecer;
         animation-iteration-count: infinite;
@@ -41,6 +41,11 @@
         width: 100%;
         margin-top: 50px;
     }
+
+    .img-tam {
+        width: 100%;
+    }
+
 
     .fundamentos {
         width: 100%;
